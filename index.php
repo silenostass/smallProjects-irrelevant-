@@ -14,7 +14,7 @@
     </body>
 </html>
 
-<?php
+<?php //Программа переводит числа от 0 до 999 999 999 999 в пропись.
 mb_internal_encoding('utf-8');
 
 $number = $_GET['number'];
