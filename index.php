@@ -15,21 +15,6 @@
 </html>
 
 <?php
-/*
-include('includes/db.php');
-
-?>
-
-//for( $i=1; $i<=10; $i++ ) {
-    //$x = mt_rand(1, 10);
-//    $y = mt_rand(1, 6);
-//    echo '-' . $x . 'x' . $y . '=><br>' ;
-//}
-
-?>
-
-
-<?php */
 mb_internal_encoding('utf-8');
 
 $number = $_GET['number'];
@@ -145,39 +130,4 @@ function formBigNumber($smallNumberWord, $i) { //склонение слов, д
     }
     return [$smallNumberWord, $numberNames[$i]];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//$regexexp = "//u"
-//$str = 6542;
-//$strArr = str_split($str, 3);
-//echo inclineWord(6);
-/*$expnum = 43;
-$splitArr = str_split($expnum, 1);
-var_dump($splitArr);
-$trioArr = range(1, 3);
-var_dump($trioArr);*/
-
-//    $regexpSplit = "/(?<=^(1[\d])$|^[1-9]|[\d]1[\d]$|^[1-9]|[2-9]|[\d]$)/u";
-//    $smallNumbArr = array_filter(preg_split($regexpSplit, $expnum));
-
-
-//$regexp3 = "/^(1[0-9])$|^(([1-9])?([02-9])?(1?[0-9]))$/u";
-//echo preg_replace($regexp3, '$', $expnum );
-/*$smallNumbArr = str_split($last3Digits, 1);
-if ($smallNumbArr[1] == 1 && $smallNumbArr[2] > 0) {
-    $smallNumbArr[1] = $smallNumbArr[1] . $smallNumbArr[2];
-    unset($smallNumbArr[2]);
-}*/
 ?>
